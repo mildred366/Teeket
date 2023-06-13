@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import google from '../assets/google logo.png'
 import {Button} from '../components/Button'
 
@@ -37,6 +38,7 @@ function Login () {
         <p style={{color: '#8F8F8F', textAlign: 'center', width: '23rem'}}>By continuing, you acknowledge that you have read and understand, and agree to Teeket's <span style={{fontWeight: '700', textDecoration: 'underline', color: '#101010'}}>Terms of Service</span> and <span style={{fontWeight: '700', textDecoration: 'underline', color: '#101010'}}>Privacy Policy</span>.</p>
       </div>
     </div>
+    <Footer />
     </div>
     </>
   );
