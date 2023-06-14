@@ -1,0 +1,6 @@
+.homepage {
+    background: linear-gradient(to bottom, #030A2E, transparent),
+    url('../assets/image1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

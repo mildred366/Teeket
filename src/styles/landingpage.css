@@ -1,6 +1,5 @@
 .landingpage {
-    background: #0354f5 url(../assets/pattern.svg);
-    margin: 0;
-    padding: 2em 0 11em 0;
-    height: 100vh;
+        background: linear-gradient(to bottom, rgba(3, 10, 46, 0.71), transparent),
+        url('../assets/pattern.svg');
+      height: 100vh;
 }
