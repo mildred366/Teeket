@@ -26,7 +26,7 @@ function LandingPage () {
           <EventButton title={"Create an Event"} />
           <div className='flex justify-center w-full'>
             <button className='text-black text-base w-full bg-white block px-6 py-5 rounded-xl'>
-              <Link to='/eventlisting'> Discover events
+              <Link to='/eventlistings'> Discover events
               </Link>
             </button>
           </div>
