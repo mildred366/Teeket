@@ -22,7 +22,7 @@ function Home () {
           <p className='text-white font-light mb-4'>
             Create events and sell tickets in minutes - at no cost - with the only event platform you need
           </p>
-          <EventButton title={"Create an Event"} />
+          <EventButton to='eventlistings' title={"Create an Event"} />
         </div>
         <div>
           <h2 className='text-center font-semibold text-2xl mt-14 mb-4'>Empowering event creators everywhere</h2>
