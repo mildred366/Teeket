@@ -8,12 +8,12 @@ import { EventButton } from '../components/EventButton'
 
 function LandingPage () {
   return (
-    <div className='landingpage font-manrope'>
-      <div className='absolute top-0 bottom-0 w-full h-full bg-gradient-to-b from-[#030A2E]'></div>
+    <div className='landingpage font-manrope bg-[#030A2E]'>
+      <div className='absolute top-0 bottom-0 w-full'></div>
       <div className='mx-auto w-[90%] min-[548px]:w-[60%] lg:w-[30%]'>
-        <div style={{textAlign: 'center',paddingTop: '4em'}}>
+        <div style={{textAlign: 'center', paddingTop: '8em'}}>
           <Link to='/'>
-          <img src={logo} alt='logo' style={{width: '18vw', margin: '0 auto 4em auto'}} />
+          <img src={logo} alt='logo' style={{width: '40%', margin: '0 auto 4em auto'}} />
           </Link>
         </div>
         <main>
