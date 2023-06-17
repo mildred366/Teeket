@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# Project Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This ticket application is a web application taht serves as a platform for organizers and attendees to facilitate the process of ticketing, event management, and participation. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+## Overview
+Here's a summarized detailed description of this ticket application for both organizers and attendees:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+For Organizers:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Event Creation: Organizers can create and manage events by providing event details such as name, date, time, location, description, ticket types, pricing, and capacity.
 
-### `npm test`
+Ticket Management: Organizers can set up ticket types, define pricing tiers, and manage ticket inventory. They can track ticket sales, view attendee information, and generate attendee lists.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Payment Processing: This application will enable a secure payment processing, allowing organizers to accept payments from attendees through various payment methods such as credit/debit cards, online wallets, or bank transfers.
 
-### `npm run build`
+Event Promotion: Organizers will be able promote their events by utilizing marketing features such as event listings, sharing on social media platforms, sending email campaigns, and integrating with other promotional channels.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Analytics and Reporting: This ticket application provides analytics and reporting tools to track ticket sales, revenue, attendee demographics, and other key metrics. This helps organizers gain insights into event performance and make data-driven decisions.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For Attendees:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Event Discovery: Attendees can browse through a list of upcoming events, search for events based on preferences like location, date, or category, and access event details including descriptions, dates, and ticket pricing.
 
-### `npm run eject`
+Ticket Purchase: Attendees will be able to easily purchase tickets for events through the ticket application. They can select ticket types, choose the desired quantity, and proceed with secure online payment.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Ticket Management: Attendees will access to their purchased tickets within the application. They can view and download their tickets, receive email confirmations, and get updates or reminders about the event.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Attendee Communication: This ticket application allows organizers to communicate important event information to attendees, such as event updates, changes in schedule or venue, and any additional instructions or guidelines.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Attendee Support: Attendees can reach out to the ticket application's support channels for any queries, concerns, or assistance related to their ticket purchases or event participation.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Overall, this ticket application simplifies the event management process for organizers while providing attendees with a seamless experience to discover, purchase, and manage their event tickets.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Screenshot
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![teeket](/src/assets/Mobile - login page.jpg)
+![teeket](/src/assets/Landing page.jpg)
+![teeket](/src/assets/Mobile - Event Listing Page.jpg)
+![teeket](/src/assets/Home - organizer.jpg)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Links
 
-### Analyzing the Bundle Size
+- Solution URL: (https://github.com/mildred366/Teeket)
+- Live Site URL: (https://teeket.netlify.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## My process
 
-### Making a Progressive Web App
+### Built with
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Tailwind Css
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Firebase](https://console.firebase.google.com/) - Login authenticator
+- [Styled Components](https://styled-components.com/) - For styles
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### What I learned
 
-### Deployment
+During the course of this bootcamp, I have learnt a whole lot. This project particularly taught me to get my balance in Tailwind Css and the React Js framework. I particularly want to bask in my confidence with using components to make work easier and also how I can now user react router Dom to navigate pages. 
+The Tailwind aspect of this project showed me how use breakpoints appropriately and how to style components easily with less rules making room for a very neat code base.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Not to forget the firebase and toastify aspect, I love how I was able to use toastify to tell users that their login was successful and how I leveraged firebase to see how much interaction my web application has.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Continued development
+
+Subsequently, I will like to improve this application further and enable a payment portal where users can shop for their tickets.
+
+### Useful resources
+
+- [W3 Schools](https://www.w3schools.com) - This helped me in understanding React hooks. I really liked their pattern of breaking down complex topics into bits.
+- [Stack Overflow](https://stackoverflow.com) - This is for all developers I suppose.
+
+
+## Author
+
+- LinkedIn - [Mildred Erubore](https://www.linkedin.com/in/mildred-erubore)
+- Frontend Mentor - [@mildred366](https://www.frontendmentor.io/profile/mildred366)
+- Twitter - [@hourGlassCodess](https://www.twitter.com/hourGlassCodess)
+
+
+## Acknowledgments
+
+My sincere appreciation goes to the HerTechTrail community, I can't tell how much of an impact this community has on my career journey.
+Special thanks also to my coaches, @PrincessMaggy you are truly the best!! 
+And to all my classmates, I hope the journey forward reminds us of consistency. The labor of today is the fruit of tomorrow.
