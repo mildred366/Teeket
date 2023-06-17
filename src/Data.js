@@ -55,7 +55,6 @@ export let remainEvents = [
     location: 'Abuja, Nigeria',
     date: '03 JUNE',
     title: 'Swimming Trainings',
-    image: 'event_image3',
     price: '$10.00',
     image: '/images/list5.png',
     mapline: '/images/map2.png',
