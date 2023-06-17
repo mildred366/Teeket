@@ -29,14 +29,15 @@ function Login () {
       [e.target.id]: e.target.value,
     }));
   };
+
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
         const auth = getAuth();
         const userCredential = await createUserWithEmailAndPassword(
             auth,
-            email,
-            password,
+            formInput.email,
+            formInput.password,
         );
         const user = userCredential.user;
         const formInputCopy = {...formInput};
@@ -44,7 +45,7 @@ function Login () {
         formInputCopy.timestamp = serverTimestamp();
 
         await setDoc(doc(firebaseSetup, 'users', user.uid), formInputCopy);
-        navigate('/landingpage');
+        navigate('/home');
         toast.success('Successful Login!');
     } catch (error) {
         toast.error('Oops..Try again!');
@@ -84,8 +85,8 @@ const onGoogleClick = async () => {
       <h2 className='py-14 font-normal text-3xl text-center'>Log in or sign up to continue</h2>
       <div className='flex justify-center pb-6'>
         <button className='py-4 px-20 w-full border rounded-xl '>
-          <div className='flex justify-center'>
-            <img src={google } width="30px" height="30px" alt="Glogo" className='mr-3' onClick={onGoogleClick}/>
+          <div className='flex justify-center' onClick={onGoogleClick}>
+            <img src={google } width="30px" height="30px" alt="Glogo" className='mr-3' />
             <p className='mt-1'>Continue with Google</p>
           </div>
         </button>
@@ -101,7 +102,7 @@ const onGoogleClick = async () => {
           <input type="password" onChange={onChange} name='password' id='password' minLength="8" value={password} autoComplete='on' placeholder="Password"  className='text-[#8F8F8F] text-base bg-[#EDEDED] block w-full px-6 py-5 rounded-xl focus:outline-none focus:border-sky-500 placeholder:text-[#8F8F8F]'/>
         </form>
       </div>
-      <Button title={"Continue with email"}  onClick={onSubmit}
+      <Button title={"Continue with email"} type="submit" onClick={onSubmit} 
        />
       <div className='flex justify-center mb-6'>
         <p style={{color: '#8F8F8F', textAlign: 'center', width: '23rem'}}>By continuing, you acknowledge that you have read and understand, and agree to Teeket's <span style={{fontWeight: '700', textDecoration: 'underline', color: '#101010'}}>Terms of Service</span> and <span style={{fontWeight: '700', textDecoration: 'underline', color: '#101010'}}>Privacy Policy</span>.</p>

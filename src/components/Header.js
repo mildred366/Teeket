@@ -12,7 +12,7 @@ function Header () {
 
     <div className='font-manrope flex bg-white shadow-md shadow-black/10 px-4 pt-7 pb-3 sticky top-0 bottom-0 z-3000'>
       <div className='flex-1'>
-        <Link to='/LandingPage'>
+        <Link to='/'>
         <img src={teeketLogo} width='180px' alt='logo' />
         </Link>
       </div>
