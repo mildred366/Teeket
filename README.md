@@ -99,5 +99,5 @@ Subsequently, I will like to improve this application further and enable a payme
 ## Acknowledgments
 
 My sincere appreciation goes to the HerTechTrail community, I can't tell how much of an impact this community has on my career journey.
-Special thanks also to my coaches, @PrincessMaggy you are truly the best!! 
+Special thanks also to my coaches, [@PrincessMAggy](https://www.frontendmentor.io/profile/PrincessMaggy) you are truly the best!! 
 And to all my classmates, I hope the journey forward reminds us of consistency. The labor of today is the fruit of tomorrow.
