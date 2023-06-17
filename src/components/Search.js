@@ -1,13 +1,15 @@
 import React from 'react'
-import wallaceJames from "../imgassets/wallaceJames.svg";
-import MapPinLine from "../imgassets/MapPinLine.svg";
-import Frame_167 from "../imgassets/Frame_167.svg";
-import frame_166 from "../imgassets/Frame 166.png";
-import image6 from "../imgassets/image6.png";
-import Frame_165 from "../imgassets/Frame_165.svg";
-import unsplash_3 from "../imgassets/unsplash_3.png";
-import unsplash_1 from "../imgassets/unsplash_1.png";
-import unsplash_2 from "../imgassets/umsplash_2.png";
+import MapPinLine from "../assets/map.svg";
+import Icon1 from "../assets/icon1.png";
+import Icon2 from "../assets/icon2.png";
+import Icon3 from "../assets/icon3.png";
+import Icon4 from "../assets/icon4.png";
+import Icon5 from "../assets/icon5.png";
+import List1 from "../assets/list1.png";
+import List2 from "../assets/list2.png";
+import List3 from "../assets/list3.png";
+import List4 from "../assets/list4.png";
+import List5 from "../assets/list5.png";
 import {useState} from 'react';
 
 
@@ -17,11 +19,11 @@ const Data_3 =[
      date : '03 June',
      cost : '$10.00',
      title : "The next conference 23'",
-     hostProfilepix : wallaceJames,
+     hostProfilepix : Icon1,
      host : 'Wallace James',
      locIcon : MapPinLine,
      location : 'Abuja,Nigeria',
-     adImage : Frame_167
+     adImage : List1
 
  },
  {
@@ -29,11 +31,11 @@ const Data_3 =[
      date : '03 June',
      cost : 'FREE',
      title : "DEVFEST",
-     hostProfilepix : frame_166,
+     hostProfilepix : Icon2,
      host : 'Miracle Kalu',
      locIcon : MapPinLine,
      location : 'Uyo,Nigeria',
-     adImage : image6
+     adImage : List2
 
  },
  {
@@ -41,11 +43,11 @@ const Data_3 =[
      date : '03 June',
      cost : 'FREE',
      title : 'Sip and Paint NGat Radison Blu',
-     hostProfilepix : Frame_165,
+     hostProfilepix : Icon3,
      host : 'Annabel Richard',
      locIcon : MapPinLine,
      location : 'Lagos,Nigeria',
-     adImage : unsplash_3
+     adImage : List3
 
  },
     
@@ -54,11 +56,11 @@ const Data_3 =[
        date : '03 June',
        cost : '$10.00',
        title : "GOALFEST",
-       hostProfilepix : wallaceJames,
+       hostProfilepix : Icon4,
        host : 'Wallace James',
        locIcon : MapPinLine,
        location : 'Lagos,Nigeria',
-       adImage : unsplash_1
+       adImage : List4
 
    },
    {
@@ -66,11 +68,11 @@ const Data_3 =[
     date : '03 June',
     cost : 'FREE',
     title : "Swimming Training",
-    hostProfilepix : wallaceJames,
+    hostProfilepix : Icon5,
     host : 'Wallace James',
     locIcon : MapPinLine,
     location : 'Lagos,Nigeria',
-    adImage : unsplash_2
+    adImage : List5
 
    }
 
