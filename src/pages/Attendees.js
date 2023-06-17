@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { EventButton } from '../components/EventButton'
 import user from '../assets/userpictures.png'
 import analytics1 from '../assets/analytics1.png'
 import analytics2 from '../assets/analytics2.png'
@@ -10,19 +9,14 @@ import { Analytics } from '../components/Analytics'
 import phone from '../assets/phone.png'
 import chat from '../assets/chat.png'
 import arrows from '../assets/arrows.png'
-import '../styles/homepage.css'
+import '../styles/attendees.css'
 
 function Home () {
   return (
     <div classHome='font-manrope'>
       <Header />
       <div className='mx-auto w-[100%] min-[548px]:w-[60%] lg:w-[30%] -z-3000'>
-        <div className='homepage p-6 pb-14 rounded-b-3xl'>
-          <h2 className='text-white font-normal text-4xl mt-20 mb-4'>Struggling to sell ticket?</h2>
-          <p className='text-white font-light mb-4'>
-            Create events and sell tickets in minutes - at no cost - with the only event platform you need
-          </p>
-          <EventButton to='eventlistings' title={"Create an Event"} />
+        <div className='attendees p-6 pb-30 rounded-b-3xl'>
         </div>
         <div>
           <h2 className='text-center font-semibold text-2xl mt-14 mb-4'>Empowering event creators everywhere</h2>
@@ -64,7 +58,7 @@ function Home () {
           <div className='w-full pb-6'>
             <img src={phone} alt='teeketphone' />
           </div>
-          <p className='text-[#2068F7] text-2xl font-semibold text-center'>
+          <p className='text-[#2068F7] font-semibold text-center'>
             That's not all!
           </p>
           <p className='text-center font-light mb-4 px-10'>

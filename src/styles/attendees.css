@@ -1,0 +1,8 @@
+.attendees {
+    background: linear-gradient(to bottom, #030A2E, transparent),
+    url('../assets/attendees.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: '362px';
+  width: '375px'
+}
