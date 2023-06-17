@@ -10,6 +10,8 @@ import List2 from "../assets/list2.png";
 import List3 from "../assets/list3.png";
 import List4 from "../assets/list4.png";
 import List5 from "../assets/list5.png";
+import search from "../assets/Elipse.png";
+import list from "../assets/SlidersHorizontal.png";
 import {useState} from 'react';
 
 
@@ -92,16 +94,23 @@ function Search() {
 
   return (
     <>
-      <div>
-       <input
-       className=''
-        type="text"
-        value={searchInput}
-        onChange={handleSearchInputChange}
-        placeholder="Search"
-      /> 
+      <div className='flex mb-6'>
+        <div className='flex text-[#101010] text-base bg-[#EDEDED] p-3 rounded-xl ml-2 mr-6 flex-1'>
+        <img  src={search} width="30px" height="30px" alt="iconSearch" className='flex-none'/>
+        <input
+          className='ml-2 bg-[#EDEDED] focus:outline-none focus:border-sky-500 placeholder:text-lg placeholder:text-[#101010] opacity-30'
+          type="text"
+          value={searchInput}
+          onChange={handleSearchInputChange}
+          placeholder="Search all events"
+        /> 
+        </div>
+        <div className='flex-none mx-4'>
+        <button className='text-white bg-[#001133] rounded-xl p-3 font-bold shadow-md shadow-black/40'>
+        <img  src={list} width="30px" height="30px" alt="iconList" />
+        </button>
+        </div>
       </div>
-      
       <ul >
         {filteredData.map((data, index) =>
          <li key={index}>
