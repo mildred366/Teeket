@@ -16,17 +16,17 @@ function Home () {
   return (
     <div classHome='font-manrope'>
       <Header />
-      <div className='mx-auto w-[100%] min-[548px]:w-[60%] lg:w-[30%] -z-3000'>
+      <div className='mx-auto w-[100%] min-[548px]:w-[60%] lg:w-[80%] -z-3000'>
         <div className='homepage p-6 pb-14 rounded-b-3xl'>
-          <h2 className='text-white font-normal text-4xl mt-20 mb-4'>Struggling to sell ticket?</h2>
-          <p className='text-white font-light mb-4'>
+          <h2 className='text-white font-normal text-6xl mt-20 mb-4'>Struggling to sell ticket?</h2>
+          <p className='text-white font-light mb-4 text-xl'>
             Create events and sell tickets in minutes - at no cost - with the only event platform you need
           </p>
-          <EventButton to='eventlistings' title={"Create an Event"} />
+          <EventButton to='eventlistings' title={"Create an Event"} className='text-2xl' />
         </div>
         <div>
-          <h2 className='text-center font-semibold text-2xl mt-14 mb-4'>Empowering event creators everywhere</h2>
-          <p className='font-medium mb-4 text-center'>
+          <h2 className='text-center font-semibold text-4xl mt-14 mb-4'>Empowering event creators everywhere</h2>
+          <p className='font-medium mb-4 text-center text-xl'>
             More than 1 million people across 5 continents choose Teeket
           </p>
         </div>
@@ -34,7 +34,7 @@ function Home () {
           <img src={user} alt='userpictures' />
         </div>
         <div className='bg-gradient-to-b from-[#d0dbf1] opacity-100 p-4 mt-8 font-manrope rounded-t-3xl'>
-          <p className='text-[#0052F6] font-extrabold text-lg mb-6'>
+          <p className='text-[#0052F6] text-3xl font-extrabold text-lg mb-6'>
             Teeket Features
           </p>
           <Analytics
@@ -54,20 +54,20 @@ function Home () {
             image={analytics3} />
         </div>
         <div className='bg-gradient-to-b from-white to-[#FAFAFA]'>
-          <p className='text-center font-semibold text-lg mb-4'>
+          <p className='text-center font-semibold text-3xl mb-6'>
             Do more with the Teeket app
           </p>
-          <p className='text-center font-light mb-4 px-10'>
+          <p className='text-center text-xl font-light mb-4 px-10'>
             Organize events like a Pro with our easy to use <span className='text-[#0354F5]'>Teeket app</span> featuring tools like check in, curated guestlists, marketing
             tools and much more
           </p>
           <div className='w-full pb-6'>
             <img src={phone} alt='teeketphone' />
           </div>
-          <p className='text-[#2068F7] text-2xl font-semibold text-center'>
+          <p className='text-[#2068F7] text-4xl font-semibold text-center mb-4'>
             That's not all!
           </p>
-          <p className='text-center font-light mb-4 px-10'>
+          <p className='text-center text-xl font-light mb-4 px-10'>
             Get 30 days free access to promotion by our partners to attract more attendees and boost ticket sales for your events.
           </p>
           <div className='border w-full mt-6 mb-6'></div>
@@ -77,7 +77,7 @@ function Home () {
           <div className='w-full pb-6 pl-4'>
             <img src={chat} alt='chatbox' />
           </div>
-          <div className='pb-6 w-[30%] mx-32'>
+          <div className='pb-10 w-[30%] flex justify-center'>
             <img src={arrows} alt='scroll' />
           </div>
           <Footer />
