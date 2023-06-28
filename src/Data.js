@@ -40,7 +40,7 @@ export let remainEvents = [
   {
     id: 0,
     heading: 'Sport Events',
-    name: 'Wallace James',
+    name: 'Bethel K.',
     location: 'Lagos, Nigeria',
     date: '03 JUNE',
     title: 'Goalfest 2023',
@@ -51,7 +51,7 @@ export let remainEvents = [
   },
   {
     id: 2,
-    name: 'Wallace James',
+    name: 'Wade Oliver',
     location: 'Abuja, Nigeria',
     date: '03 JUNE',
     title: 'Swimming Trainings',
