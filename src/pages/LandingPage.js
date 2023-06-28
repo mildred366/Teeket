@@ -11,7 +11,7 @@ function LandingPage () {
     <div className='landingpage font-manrope bg-[#030A2E]'>
       <div className='mx-auto w-[90%] min-[548px]:w-[60%] lg:w-[30%]'>
         <div style={{textAlign: 'center', paddingTop: '8em'}}>
-          <Link to='/landingpage'>
+          <Link to='/'>
           <img src={logo} alt='logo' style={{width: '40%', margin: '0 auto 4em auto'}} />
           </Link>
         </div>
