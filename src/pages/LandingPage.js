@@ -1,12 +1,29 @@
 import React from 'react'
 import logo from '../assets/teeket logo2.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import frame from '../assets/Frame.png'
 import '../styles/landingpage.css'
 import Footer from '../components/Footer'
 import { EventButton } from '../components/EventButton'
 
 function LandingPage () {
+  const navigate = useNavigate(); 
+  const createEvent = async () => {
+    let isUserLoggedIn = await localStorage.getItem('user')
+   if (isUserLoggedIn) {
+    return navigate('/home')
+   } 
+   navigate('/login', {state: 'createEvent'})
+
+  }
+
+  const discoverEvent = async () => {
+    let isUserLoggedIn = await localStorage.getItem('user')
+    if (isUserLoggedIn) {
+      return navigate('/eventlistings')
+    } 
+    navigate('/login', {state: 'discoverEvent'})
+  }
   return (
     <div className='landingpage font-manrope bg-[#030A2E]'>
       <div className='mx-auto w-[90%] min-[548px]:w-[60%] lg:w-[30%]'>
@@ -22,11 +39,10 @@ function LandingPage () {
           <p className='text-lg text-center' style={{ fontSize: '20px', margin: '2em auto 2em auto', color: 'white' }}>
             Your one stop platform to create , manage and promote your events at your convenience.
           </p>
-          <EventButton to='login' title={"Create an Event"} />
+          <EventButton to='login' title={"Create an Event"} onClick={createEvent} />
           <div className='flex justify-center w-full'>
-            <button className='text-black text-base w-full bg-white block px-6 py-5 rounded-xl'>
-              <Link to='/eventlistings'> Discover events
-              </Link>
+              <button onClick={discoverEvent} className='text-black text-base w-full bg-white block px-6 py-5 rounded-xl'>
+               Discover events
             </button>
           </div>
         </main>

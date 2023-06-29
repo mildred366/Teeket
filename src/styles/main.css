@@ -473,14 +473,23 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.absolute {
+  position: absolute;
+}
 .sticky {
   position: sticky;
 }
 .bottom-0 {
   bottom: 0px;
 }
+.right-0 {
+  right: 0px;
+}
 .top-0 {
   top: 0px;
+}
+.z-50 {
+  z-index: 50;
 }
 .m-4 {
   margin: 1rem;
@@ -566,6 +575,9 @@ video {
 }
 .grid {
   display: grid;
+}
+.hidden {
+  display: none;
 }
 .h-\[166px\] {
   height: 166px;
@@ -916,6 +928,9 @@ video {
 .placeholder\:text-\[\#8F8F8F\]::placeholder {
   --tw-text-opacity: 1;
   color: rgb(143 143 143 / var(--tw-text-opacity));
+}
+.hover\:overline:hover {
+  text-decoration-line: overline;
 }
 .focus\:border-sky-500:focus {
   --tw-border-opacity: 1;

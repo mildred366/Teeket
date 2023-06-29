@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import google from '../assets/google logo.png'
 
 
-import {useNavigate} from 'react-router-dom';
+import {useNavigate, useLocation} from 'react-router-dom';
 import {firebaseSetup} from '../firebase.config';
 import {
   getAuth,
@@ -19,6 +19,8 @@ import {toast} from 'react-toastify';
 
 function Login () {
   const navigate = useNavigate();
+  const {state} = useLocation();
+  
   const [formInput, setformInput] = useState({ email: "", password: "" });
   const { email, password } = formInput;
 
@@ -39,6 +41,7 @@ function Login () {
             formInput.password,
         );
         const user = userCredential.user;
+        await localStorage.setItem('user', JSON.stringify(user))
         const formInputCopy = {...formInput};
         delete formInputCopy.password;
         formInputCopy.timestamp = serverTimestamp();
@@ -62,6 +65,8 @@ const onGoogleClick = async () => {
     const result = await signInWithPopup(auth, provider);
     const user = result.user;
 
+    await localStorage.setItem('user', JSON.stringify(user))
+
     const docRef = doc(firebaseSetup, "users", user.uid);
     const docSnap = await getDoc(docRef);
     if (!docSnap.exists()) {
@@ -71,11 +76,15 @@ const onGoogleClick = async () => {
         timestamp: serverTimestamp(),
       });
     }
-    navigate("/home");
+    
     toast.success("Login Successful!", {
       position: "top-center",
       theme: "light",
     });
+    if (state === 'createEvent') {
+      return navigate("/home");
+    }
+    navigate("/eventlistings");
   } catch (error) {
     toast.error("Login not successful!");
   }
