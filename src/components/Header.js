@@ -29,23 +29,21 @@ function Header () {
         <img src={teeketLogo} width='180px' alt='logo' />
         </Link>
       </div>
-      <div className={`text-lg text-white bg-[#001133] rounded-2xl px-6 py-4 font-bold shadow-md shadow-black/40 z-50 absolute ${hamburgerOpen ? '' : "hidden"}  right-0 mt-16 mx-4`}>
+      <div className={`text-lg text-white bg-[#001133] rounded-xl px-6 py-4 font-bold shadow-md shadow-black/40 z-50 absolute ${hamburgerOpen ? '' : "hidden"}  right-0 mt-16 mx-4`}>
         <ul>
           <Link to='/home'>
-          <li className='hover:overline'>
+          <li className='hover:underline mx-4 py-2'>
             Home
           </li>
           </Link>
           <Link to='/eventlistings'>
-          <li className='hover:overline'>
+          <li className='hover:underline mx-4 py-2'>
             Event Listing
           </li>
           </Link>
-          {/* <Link to='/login'> */}
-          <li className='hover:overline' onClick={logout}>
+          <li className='hover:underline mx-4 py-2' onClick={logout}>
             Logout
           </li>
-          {/* </Link> */}
         </ul>
       </div>
       <div className='flex-none'>

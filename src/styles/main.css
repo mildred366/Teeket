@@ -755,6 +755,10 @@ video {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
 }
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -929,8 +933,8 @@ video {
   --tw-text-opacity: 1;
   color: rgb(143 143 143 / var(--tw-text-opacity));
 }
-.hover\:overline:hover {
-  text-decoration-line: overline;
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 .focus\:border-sky-500:focus {
   --tw-border-opacity: 1;
